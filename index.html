@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para yessica la niña mas bonita</title>
+
+    <style>
+        .body {
+            background-color: black;
+            text-align: center;
+        }
+
+        .body__title {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: aquamarine;
+            text-align: center;
+        }
+
+        .body__img {
+            text-align: center;
+            width: 500px;
+            height: 500%;
+            border-radius: 20%;
+        }
+
+        .si {
+            font-family: 'Times New Roman', Times, serif;
+            flex-direction: column;
+        }
+
+        .nop {
+            font-family: 'Times New Roman', Times, serif;
+            flex-direction: column;
+        }
+
+        .audio {
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            
+        }
+    </style>
+
+</head>
+
+<body class="body">
+    <h1 class="body__title"> ¿quieres volver conmigo?</h1>
+    <img 
+    src="https://instagram.fcjs3-2.fna.fbcdn.net/v/t51.2885-15/286543819_118383587425704_1156745512590123514_n.jpg?stp=dst-jpg_e35_s750x750_sh0.08&_nc_ht=instagram.fcjs3-2.fna.fbcdn.net&_nc_cat=100&_nc_ohc=AN1BsfGccPQAX9Jon8L&edm=ABJHkxYAAAAA&ccb=7-5&ig_cache_key=Mjg1NjMyMTc1NjE2MDI0OTk5MQ%3D%3D.2-ccb7-5&oh=00_AT_YTzW-KGH5b2rLgpfPm2846jCw0VK2_BXy0qLEPDtAag&oe=62A8E4A8&_nc_sid=fa978c" 
+    alt="nosotros" class="body__img"/>
+    <button class="si" id="yes">OBVIAMENTE SI MI NIÑO HERMOSO TE QUIERO MUCHO🥰</button>
+    <button class="nop" id="no">NO QUIERO ALEJATE DE MI PINCHE PERRO😥</button>
+
+    <audio src="/audio/diquenotevas" autoplay="true" loop="true"></audio>
+  
+    <script>
+      const botonsi = document.getElementById('yes');
+      const botonno = document.getElementById('no');
+
+      const yavolvimos = () => {
+          alert('dale a aceptar para leer todo xfavor ❤');
+          alert('enserio te extraño yessica mandame otro mensaje');
+          alert('aunque sea un mensaje despidiendote, enserio te necesito en mi vida 😥');
+          alert('un amor como el nuestro no lo olvidare jamas');
+          alert('enserio te amo intento hacer cuaquier cosa para demostrartelo');
+          alert('escucha este playlist que te hice, te amo corazoncito ❤');
+          location.href = 'https://www.youtube.com/playlist?list=PLVnOBqhISTUaDM5GBDbnH5K8L4SaPiqPB'
+      } 
+
+      const nomedigasqueno = () => {
+      botonno.style.position = 'absolute';
+      botonno.style.top = (Math.random() * window.innerHeight) + 'px';
+      botonno.style.left = (Math.random() * window.innerWidth) + 'px';
+      }
+
+      botonsi.addEventListener('click', yavolvimos);
+      botonno.addEventListener('mouseover', nomedigasqueno);
+    </script>
+</body>
+
+</html>
